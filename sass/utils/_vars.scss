@@ -1,0 +1,34 @@
+:root {
+	--third-font: "Oleo Script";
+	--secondary-font: "Raleway";
+	--main-font: "Roboto";
+
+	/* кольори тексту */
+	--black-txt-cl: #000000;
+	--accent-txt-cl: #2196f3;
+	--dark-txt-cl: #212121;
+	--light-txt-cl: #ffffff;
+	--gray-txt-cl: #757575;
+
+	/* кольори фону */
+	--gray-bgr-cl: #f5f4fa;
+	--dark-bgr-cl: #2f303a;
+	--light-bgr-cl: #ffffff;
+	--blue-but-cl: #188ce8;
+	/* колір бордера */
+	--color-border-porfolio: #eeeeee;
+	/* колр іконок в ховері, фокусі */
+	--background-color-icons: #2196f3;
+	--color-icons: #ffffff;
+	--dark-cl-icons: #212121;
+	/* іконки та бордер в розділі на ша команда  */
+	--gray-background-cl-icons:#afb1b8;
+
+	/* змінні в сітці в портфоліо */
+    --border-portfolio:#ececec;
+    --items: 3;         
+    --indent: 30px;
+	/* зміні кольори в таймінгах */
+	--timing-variable: cubic-bezier(0.4, 0, 0.2, 1);
+	--width: 1200px;
+}

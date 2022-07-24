@@ -1,0 +1,37 @@
+/* reeset */
+html {
+	box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* загальні властивоті зображень */
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+	font-style: normal;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

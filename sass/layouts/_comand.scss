@@ -1,0 +1,50 @@
+.h2-title {color: var(--dark-txt-cl);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center; 
+    margin-bottom: 50px;
+    margin-top: 0;
+    }
+    
+
+.comands {background: var(--gray-bgr-cl);
+        display: flex; padding-left: 0; }
+
+.comand-list {background-color: var(--light-bgr-cl);
+        text-align: center;
+        margin-right: 30px; 
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+
+
+
+    &__title { 
+        font-family: inherit;
+        color: var(--dark-txt-cl); 
+        font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-top: 0;
+    
+    }
+    
+    &__item {padding-top: 30px; padding-bottom: 30px;}
+
+    &__text { color: var(--gray-txt-cl);
+        font-family: inherit;
+        text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-decoration: none;
+    
+    }
+   
+
+        }

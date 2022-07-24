@@ -1,0 +1,40 @@
+.clients {display: flex;
+    font-size: 36px;
+    line-height: 1.16;
+    padding: 0;
+    text-align: center;
+
+&__item:not(:last-child) {margin-right: 30px;}
+
+&__item { width: 170px; height:92px;}
+
+&__icon {fill: currentColor;}
+
+
+
+&__icon:hover,
+&__icon:focus {color: var(--blue-but-cl);
+    border-color: var(--blue-but-cl);
+    transition: 250ms var(--timing-variable);
+}
+
+&__link { display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--gray-background-cl-icons);
+    border-radius: 4px;
+    color:  var(--gray-background-cl-icons);
+
+    transition: 250ms var(--timing-variable);
+}
+&__link:hover,
+&__link:focus {color: var(--blue-but-cl);
+    border-color: var(--blue-but-cl);
+    
+}
+
+
+}

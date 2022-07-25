@@ -24,11 +24,13 @@
 </head>
 
 <body data-body>
-
+<!-- шапка -->
+<!-- логотип -->
     <div class="container">
     <header class="header">
              <a class="logo" href="./index.html">Web<span class="logo-web">Studio</span></a>
-        <nav >
+<!-- голоана навігація -->
+        <!-- <nav>
         <ul class="head-nav">
             <li class="head-nav__list" ><a class="curent-studio" href="./index.html">Студия</a>
                
@@ -36,8 +38,10 @@
             <li class="head-nav__list"><a class="header-list" href="./portfolio.html">Портфолио</a></li>
             <li class="head-nav__list"><a class="header-list" href="">Контакты</a></li>
         </ul>
-        </nav>
-        <div class="head-group"> 
+        </nav> -->
+ <!-- голоана навігація кінець -->
+ <!-- контаки, пошта, адреса -->
+        <!-- <div class="head-group"> 
         <ul class="head-group">
         <li class="head-group__list">
             <a class="list" href="mailto:info@devstudio.com"><svg class="heder-icon" width="16" height="12">
@@ -50,20 +54,21 @@
             </svg>+38 096 111 11 11</a>
         </li>
         </ul>
-        </div>
+        </div> -->
+        <!-- контаки, пошта, адреса кінець -->
     </header>  
         </div>
-         
+         <!--шапка кінець  -->
  <main>
-    
+    <!-- герой -->
 <section class="hero-overlay">
 <div class="container">
     <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
 
     <button class="button-order" type="button" data-modal-open>Заказать услугу</button>
-  
+  <!-- герой кінець -->
     <div class="backdrop is-hidden" data-modal>
-        
+        <!-- модалка -->
         <div class="modal">
            
             <button class="modal-close-button" type="button" data-modal-close>
@@ -73,7 +78,7 @@
 
             <form class="modal-form" >
             <h2 class="modal-form__title">Оставьте свои данные, мы вам перезвоним</h2> 
-
+                   <!-- нікнейм або ПІБ -->
                 <ul>
                     <li><label class="modal-form__list" for="name">Имя</label>
                      <input class="modal-form__input"  name="name" id="name" required>       
@@ -81,7 +86,7 @@
                         <use href="./image/icons.svg#icon-name-modal"></use>
                         </svg>
                     </li>
-
+                    <!-- телефон -->
                     <li>
                         <label class="modal-form__list" for="tel">Телефон</label>
                         <input class="modal-form__input" type="tel" name="tel" id="tel" required> 
@@ -89,6 +94,7 @@
                         <use href="./image/icons.svg#icon-tel-modal"></use>
                         </svg>
                     </li>
+                    <!-- пошта  -->
                     <li>
                         <label class="modal-form__list" for="email">Почта</label>
                         <input class="modal-form__input" type="email" name="email" id="email" required>
@@ -96,12 +102,13 @@
                         <use href="./image/icons.svg#icon-mail-modal"></use>
                         </svg>
                     </li>
+                    <!-- коменти -->
                     <li>
                         <label class="modal-form__list" for="coment">Комментарий</label>
                         <textarea class="modal-form__coment" name="coment" id="coment" placeholder="Введите текст"></textarea>
                     </li>
                 </ul>
-                
+                <!--розділ підтверження  -->
             <label class="checkbox">
                 <input class="checkbox__input" type="checkbox" name="checkbox" id="checkbox" >
 
@@ -116,15 +123,16 @@
 
                 <button class="modal-submit" type="submit">Отправить</button>
             </form>
+<!-- модалка кінець -->
         </div>
         
     </div>
 </div>
 </section> 
-
+<!-- наші переваги -->
 <section class="section-studia">
 <div class="container">
-   <h2 hidden>Студия</h2>
+   <h2 hidden>особенности</h2>
 <ul class="studia">
     <li class="studia-list" >
         <div class="studia-list__item">
@@ -165,8 +173,8 @@
         </li>
   </ul></div>
 </section>
-
-
+<!-- наші переваги кінець -->
+<!-- над чим пи працюемо початок -->
 <section class="section">
     <div class="container">
    <h2 class="work-title">Чем мы занимаемся</h2>
@@ -185,8 +193,8 @@
         <p class="works-list__describtion">Дизайнерские решения</p></div></li>
 </ul></div>
 </section>
-
-
+<!-- над чим пи працюемо кінець -->
+<!-- наша команда -->
 <section class="section-comand">
     <div class="container">
      <h2 class="h2-title">Наша команда</h2>
@@ -196,7 +204,7 @@
         <div class="comand-list__item">
         <h3 class="comand-list__title">Игорь Демьяненко</h3>
         <p class="comand-list__text" lang="en">Product Designer</p>
-      
+      <!-- секція соц мереж -->
         <ul class="social">
             <li class="social-link">
                 <a class="soclink" href="" aria-label="instagram">
@@ -233,7 +241,7 @@
        <div class="comand-list__item">
         <h3 class="comand-list__title">Ольга Репина</h3>
         <p class="comand-list__text" lang="en">Frontend Developer</p>
-        
+        <!-- секція соц мереж -->
         <ul class="social">
             <li class="social-link">
                 <a class="soclink" href="" aria-label="instagram">
@@ -271,7 +279,7 @@
         <div class="comand-list__item">
         <h3 class="comand-list__title"> Николай Тарасов</h3>
         <p class="comand-list__text" lang="en">Marketing</p>
-       
+       <!-- секція соц мереж -->
         <ul class="social">
             <li class="social-link">
                 <a class="soclink" href="" aria-label="instagram">
@@ -308,6 +316,7 @@
         <div class="comand-list__item">
         <h3 class="comand-list__title">Михаил Ермаков</h3>
         <p class="comand-list__text" lang="en">UI Designer</p>
+        <!-- секція соц мереж -->
         <ul class="social">
             <li class="social-link">
                 <a class="soclink" href="" aria-label="instagram">
@@ -343,11 +352,12 @@
 </ul>
 </div>
 </section>
-              
-
+<!-- наша команда кінець -->
+<!-- постійні клієнти  -->
 <section class="section">
     <div class="container">
         <h2 class="h2-title">Постоянные Клиенты</h2>
+ <!-- список клієнтів -->
     <ul class="clients">
          <li class="clients__item">
             <a class="clients__link" href="" aria-label="logo">
@@ -388,9 +398,10 @@
      </ul>
      </div>
 </section>
+<!-- постійні клієнти кінець -->
 
 </main>
-
+<!-- підвал сайту -->
 <footer class="footer">
 <div class="container">
     <div class="footer-items"> 
@@ -403,6 +414,7 @@
         </ul>
         </address>
     </div>
+    <!-- розділ соц мереж -->
     <div class="footer-social">
         <strong class="slogan">Присоединяйтесь</strong>
         <ul class="social">
@@ -436,7 +448,8 @@
             </li>
         </ul>
     </div>
-
+<!-- розділ соц мереж кінець -->
+<!-- розділ підписка -->
     <form class="footer-label">
       <label class="footer-label__title">Подпишитесь на рассылку </label>
       <input class="footer-label__email" type="email" name="email" placeholder="Е-mail" required>
@@ -446,11 +459,12 @@
         </svg>
     </button>
 </form>
+<!-- підписка кінець -->
 </div>
 </footer>
+<!-- підвал сайту кінець -->
 
-
-
+<!-- скрипт на модалку -->
 <script src="./js/modal.js"></script>
     </body>
 </html>

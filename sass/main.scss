@@ -1,14 +1,21 @@
 // utils styles
-@import './utils/index';
-
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/breakpoints';
 // base styles
-@import './base/index';
+@import './base/reset';
+@import './base/commond';
+@import './base/fonts' // components styles
+  @import '/components./section';
 
-// components styles
-@import './components/index';
+@import './components/container';
 
+@import './components/section-title';
+
+@import './components/modal-window';
+
+@import './components/mobile-menu';
 // layouts styles
-
 @import './layouts/page-header';
 
 @import './layouts/page-hero';

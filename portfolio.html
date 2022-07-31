@@ -2,289 +2,676 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <!-- фонд початок -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-  <!-- фонди кінець -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- фонд початок -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- фонди кінець -->
 
-  <!-- Normalize stiles початок -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
-  <!-- Normalize stiles кінець -->
+    <!-- Normalize stiles початок -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <!-- Normalize stiles кінець -->
 
-  <!-- css start-->
-  <link rel="stylesheet" href="./css/main.min.css">
+    <!-- css start-->
+    <link rel="stylesheet" href="./css/main.min.css">
 
 </head>
 
-<body>
-    
-  <header class="header">
-    <div class="container-header">
-                    <a class="logo" href="./index.html">Web<span class="logo-web">Studio</span></a>
-               <nav >
-               <ul class="head-nav">
-                <li class="head-nav__list"><a class="header-list" href="./index.html">Студия</a></li>
-                <li class="head-nav__list"><a class="curent-portfolio" href="./portfolio.html">Портфолио</a>
-                  
-                </li>
-                <li class="head-nav__list"><a class="header-list" href="">Контакты</a></li>
-               </ul>
-               </nav>
-               <div class="head-group"> 
-               <ul class="head-group">
-                  <li class="head-group__list">
-                     <a class="list" href="mailto:info@devstudio.com"><svg class="heder-icon" width="16" height="12">
-                     <use href="./image/icons.svg#icon-envelope-hover"></use>
-                     </svg>info@devstudio.com</a>
-                 </li>
-                 <li class="head-group__list">
-                     <a class="list" href="tel:+380961111111"><svg class="heder-icon" width="10" height="16">
-                     <use  href="./image/icons.svg#icon-telepfone"></use>
-                     </svg>+38 096 111 11 11</a>
-                 </li>
-               </ul>
-               </div>
-    </div>
-            </header>  
-      
-   
-<main>
+<body class="body" data-body>
 
-<section class="section">
-    <div class="container">
-     <h1 hidden>Маркетинг</h1>
-    <div class="botton-nav">
-    <ul class="botton-nav__list">
-        <li class="botton-nav__item"><button class="button" type="button">Все</button></li>
-        <li class="botton-nav__item"><button class="button" type="button">Веб-сайты</button></li>
-        <li class="botton-nav__item"><button class="button" type="button">Приложения</button></li>
-        <li class="botton-nav__item"><button class="button" type="button">Дизайн</button></li>
-        <li class="botton-nav__item"><button class="button" type="button">Маркетинг</button></li>
-        </ul>
-    </div>
-</div>
- 
-<div class="container"> 
-     <ul class="cards-set">
- <li class="cards-set__list">
-                <div class="cards-set__item">
-                     <img src="./image/portfolio/img-1-technoquack.jpg" alt="фото" width="370" height="294">
-                <div class="card-overlay">
-                <p class="cards-set__description">
-                    Ресурс предлагает комплексные предложения с разным уровнем 
-                    функционала и сервисов. Все это позволит посетителю получить 
-                    исчерпывающие сведения о компании или частном лице.
-                </p>
+    <!-- header -->
+    <header class="header">
+        <div class="header container">
+            <a class="logo header__logo" href="./index.html" aria-label="logo">Web<span class="span-h">Studio</span></a>
+            <button class="btn-menu" type="button" data-menu-button aria-label="mobile menu button">
+                <svg class="btn-menu__icons" width="24" height="16">
+                    <use class="btn-menu__icon-menu" href="./images/icons.svg#icon-menu"></use>
+                    <use class="btn-menu__icon-cross" href="./images/icons.svg#icon-cross"></use>
+                </svg>
+            </button>
+            <div class="burger" id="burger" data-menu>
+                <nav class="site-nav">
+                    <ul class="site-nav__list">
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="./index.html" aria-label="studio">Студия</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link site-nav__link--current" href="./portfolio.html"
+                                aria-label="portfolio">Портфолио</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="" aria-label="contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div>
+                    <ul class="contacts">
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="mailto:info@devstudio.com" aria-label="mail">
+                                <svg class="contacts__icon icon" width="16" height="12">
+                                    <use href="./images/icons.svg#envelope"></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link contacts__link--current" href="tel:+380961111111" aria-label="tel">
+                                <svg class="contacts__icon icon" width="10" height="16">
+                                    <use href="./images/icons.svg#smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="contacts-social">
+                        <li class="contacts-social__item">
+                            <a class="contacts-social__link" href="https://www.instagram.com/" aria-label="instagram"
+                                target="_blank" rel="noopener noreferrer">Instagram</a>
+                        </li>
+                        <li class="contacts-social__item">
+                            <a class="contacts-social__link" href="https://twitter.com/?lang=uk" aria-label="twitter"
+                                target="_blank" rel="noopener noreferrer">Twitter</a>
+                        </li>
+                        <li class="contacts-social__item">
+                            <a class="contacts-social__link" href="https://uk-ua.facebook.com/" aria-label="facebook"
+                                target="_blank" rel="noopener noreferrer">Facebook</a>
+                        </li>
+                        <li class="contacts-social__item">
+                            <a class="contacts-social__link" href="https://www.linkedin.com/" aria-label="linkedin"
+                                target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="cards-set__border"> 
-            <h2 class="cards-set__title">Технокряк</h2>
-            <p class="cards-set__text">Веб-сайт</p>
-         </div>
-        </li>
-        
-        <li class="cards-set__list">
-            <div class="cards-set__item">
-            <img src="./image/portfolio/img-2-new-orleans-vs-golden-star-poster.jpg" alt="фото" width="370" height="294">
-       <div class="card-overlay">
-       <p class="cards-set__description">
-           Ресурс предлагает комплексные предложения с разным уровнем 
-           функционала и сервисов. Все это позволит посетителю получить 
-           исчерпывающие сведения о компании или частном лице.
-       </p>
-       </div>
-   </div>   
-           <div class="cards-set__border">
-            <h2 class="cards-set__title">Постер New Orlean vs Golden Star</h2>
-            <p class="cards-set__text">Дизайн</p>
-           </div>
-      </li>
-      <li class="cards-set__list">
-        <div class="cards-set__item">
-                <img src="./image/portfolio/img-3-seafood-restaurant.jpg" alt="фото" width="370" height="294">
-           <div class="card-overlay">
-           <p class="cards-set__description">
-               Ресурс предлагает комплексные предложения с разным уровнем 
-               функционала и сервисов. Все это позволит посетителю получить 
-               исчерпывающие сведения о компании или частном лице.
-           </p>
-           </div>
-       </div>   
-            <div class="cards-set__border">
-            <h2 class="cards-set__title">Ресторан Seafood</h2>
-            <p class="cards-set__text">Приложение</p>
-            </div>
-         </li>
-
-         <li class="cards-set__list">
-            <div class="cards-set__item">
-                <img src="./image/portfolio/img-4-prime-project.jpg" alt="фото" width="370" height="294">
-           <div class="card-overlay">
-           <p class="cards-set__description">
-               Ресурс предлагает комплексные предложения с разным уровнем 
-               функционала и сервисов. Все это позволит посетителю получить 
-               исчерпывающие сведения о компании или частном лице.
-           </p>
-           </div>
-       </div>   
-            <div class="cards-set__border">
-            <h2 class="cards-set__title">Проект Prime</h2>
-            <p class="cards-set__text">Маркетинг</p>
-            </div>
-         </li>
-
-         <li class="cards-set__list">
-            <div class="cards-set__item">
-                <img src="./image/portfolio/img-5-boxes-project.jpg" alt="фото" width="370" height="294">
-           <div class="card-overlay">
-           <p class="cards-set__description">
-               Ресурс предлагает комплексные предложения с разным уровнем 
-               функционала и сервисов. Все это позволит посетителю получить 
-               исчерпывающие сведения о компании или частном лице.
-           </p>
-           </div>
-       </div>   
-            <div class="cards-set__border">
-            <h2 class="cards-set__title">Проект Boxes</h2>
-            <p class="cards-set__text">Приложение</p>
-            </div>
-        </li>
-        <li class="cards-set__list">
-            <div class="cards-set__item">
-                <img src="./image/portfolio/img-6-Inspiration-has-no-borders.jpg" alt="фото" width="370" height="294">
-           <div class="card-overlay">
-           <p class="cards-set__description">
-               Ресурс предлагает комплексные предложения с разным уровнем 
-               функционала и сервисов. Все это позволит посетителю получить 
-               исчерпывающие сведения о компании или частном лице.
-           </p>
-           </div>
-       </div>   
-            <div class="cards-set__border">
-            <h2 class="cards-set__title">Inspiration has no Borders</h2>
-            <p class="cards-set__text">Веб-сайт</p>
-            </div>
-         </li>
-
-         <li class="cards-set__list">
-            <div class="cards-set__item">
-                <img src="./image/portfolio/img-7-limited-edition.jpg" alt="фото" width="370" height="294">
-           <div class="card-overlay">
-           <p class="cards-set__description">
-               Ресурс предлагает комплексные предложения с разным уровнем 
-               функционала и сервисов. Все это позволит посетителю получить 
-               исчерпывающие сведения о компании или частном лице.
-           </p>
-           </div>
-       </div>  
-            <div class="cards-set__border">
-            <h2 class="cards-set__title">Издание Limited Edition</h2>
-            <p class="cards-set__text">Дизайн</p>
-            </div>
-         </li>
-
-    <li class="cards-set__list">
-            <div class="cards-set__item">
-        <img src="./image/portfolio/img-8-lab-project.jpg" alt="фото" width="370" height="294">
-   <div class="card-overlay">
-   <p class="cards-set__description">
-       Ресурс предлагает комплексные предложения с разным уровнем 
-       функционала и сервисов. Все это позволит посетителю получить 
-       исчерпывающие сведения о компании или частном лице.
-   </p>
-   </div>
-        </div>  
-            <div class="cards-set__border">
-            <h2 class="cards-set__title">Проект LAB</h2>
-            <p class="cards-set__text">Маркетинг</p>
-            </div>
-         </li>
-         
-    <li class="cards-set__list">
-        <div class="cards-set__item">
-        <img src="./image/portfolio/img-9-growing-business.jpg" alt="фото" width="370" height="295">
-   <div class="card-overlay">
-   <p class="cards-set__description">
-       Ресурс предлагает комплексные предложения с разным уровнем 
-       функционала и сервисов. Все это позволит посетителю получить 
-       исчерпывающие сведения о компании или частном лице.
-   </p>
-   </div>
-        </div>  
-            <div class="cards-set__border">
-            <h2 class="cards-set__title">Growing Business</h2>
-            <p class="cards-set__text">Приложение</p>
-            </div>
-         </li>
-   </ul>
-</div>
-</section>
-</main>
-
-<footer class="footer">
-    <div class="container">
-        <div class="footer-items"> 
-                <a class="logo" href="./index.html">Web<span class="logo-web">Studio</span></a>  
-                <address>
-            <ul class="footer-items-nav" >
-                <li><a class="footer-items-nav__listmap" href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank" rel="noopener nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a class="footer-items-nav__list" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="footer-items-nav__list" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-            </address>
         </div>
-        <div class="footer-social">
-            <strong class="slogan">Присоединяйтесь</strong>
-            <ul class="social">
-                <li class="footer-social-list">
-                    <a class="footer-social-list__link" href="" aria-label="instagram">
-                    <svg class="footer-social-list__icon"  width="20" height="20">
-                    <use href="./image/icons.svg#icon-instagram"></use>
-                    </svg>
-                    </a>
-                </li>
-                <li class="footer-social-list">
-                    <a class="footer-social-list__link" href="" aria-label="twitter">
-                    <svg class="footer-social-list__icon" width="20" height="20">
-                    <use href="./image/icons.svg#icon-twitter"></use>
-                    </svg>
-                    </a>
-                </li>
-                <li class="footer-social-list">
-                    <a class="footer-social-list__link" href="" aria-label="facebook">
-                    <svg class="footer-social-list__icon" width="20" height="20">
-                    <use href="./image/icons.svg#icon-facebook"></use>
-                    </svg>
-                    </a>
-                </li>
-                <li class="footer-social-list">
-                    <a class="footer-social-list__link" href="" aria-label="linkedin">
-                    <svg class="footer-social-list__icon" width="20" height="20">
-                    <use href="./image/icons.svg#icon-linkedin"></use>
-                    </svg>
-                    </a>
-                </li>
-            </ul>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+        <section class="section">
+            <div class="container">
+                <h1 class="visually-hidden">Портфолио</h1>
+                <!-- Filters -->
+                <ul class="filter">
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">Все</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">Веб-сайты</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">Приложения</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">Дизайн</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">Маркетинг</button>
+                    </li>
+                </ul>
+
+                <!-- Projects -->
+                <ul class="projects">
+                    <li class="project__item">
+                        <a class="project__link" href="#" target="_blank" rel="noopener noreferrer"
+                            aria-label="tehnokryak">
+                            <div class="project__img">
+                                <picture>
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_1.webp 450w,
+                                ./images/mobile/portfolio/project-mb_1@2x.webp 900w,
+                                ./images/mobile/portfolio/project-mb_1@3x.webp 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/webp">
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_1.jpg 450w,
+                                ./images/mobile/portfolio/project-mb_1@2x.jpg 900w,
+                                ./images/mobile/portfolio/project-mb_1@3x.jpg 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/jpg">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_1.webp 354w,
+                                ./images/tablet/portfolio/project-tb_1@2x.webp 708w,
+                                ./images/tablet/portfolio/project-tb_1@3x.webp 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/webp">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_1.jpg 354w,
+                                ./images/tablet/portfolio/project-tb_1@2x.jpg 708w,
+                                ./images/tablet/portfolio/project-tb_1@3x.jpg 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/jpg">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_1.webp 370w,
+                                ./images/desktop/portfolio/project-ds_1@2x.webp 740w,
+                                ./images/desktop/portfolio/project-ds_1@3x.webp 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/webp">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_1.jpg 370w,
+                                ./images/desktop/portfolio/project-ds_1@2x.jpg 740w,
+                                ./images/desktop/portfolio/project-ds_1@3x.jpg 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/jpg">
+
+                                    <img src="./images/desktop/portfolio/project-ds_1.jpg" alt="Веб-сайт Технокряк">
+                                </picture>
+                                <div class="project__overlay">
+                                    <p class="project__desc">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="project__card">
+                                <h2 class="project__title">Технокряк</h2>
+                                <p class="project__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project__item">
+                        <a class="project__link" href="#" target="_blank" rel="noopener noreferrer"
+                            aria-label="poster New Orlean vs Golden Star">
+                            <div class="project__img">
+                                <picture>
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_2.webp 450w,
+                                ./images/mobile/portfolio/project-mb_2@2x.webp 900w,
+                                ./images/mobile/portfolio/project-mb_2@3x.webp 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/webp">
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_2.jpg 450w,
+                                ./images/mobile/portfolio/project-mb_2@2x.jpg 900w,
+                                ./images/mobile/portfolio/project-mb_2@3x.jpg 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/jpg">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_2.webp 354w,
+                                ./images/tablet/portfolio/project-tb_2@2x.webp 708w,
+                                ./images/tablet/portfolio/project-tb_2@3x.webp 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/webp">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_2.jpg 354w,
+                                ./images/tablet/portfolio/project-tb_2@2x.jpg 708w,
+                                ./images/tablet/portfolio/project-tb_2@3x.jpg 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/jpg">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_2.webp 370w,
+                                ./images/desktop/portfolio/project-ds_2@2x.webp 740w,
+                                ./images/desktop/portfolio/project-ds_2@3x.webp 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/webp">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_2.jpg 370w,
+                                ./images/desktop/portfolio/project-ds_2@2x.jpg 740w,
+                                ./images/desktop/portfolio/project-ds_2@3x.jpg 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/jpg">
+
+                                    <img src="./images/desktop/portfolio/project-ds_2.jpg"
+                                        alt="Дизайн постер New Orlean vs Golden Star">
+                                </picture>
+
+                                <div class="project__overlay">
+                                    <p class="project__desc">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="project__card">
+                                <h2 class="project__title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                                <p class="project__text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project__item">
+                        <a class="project__link" href="#" target="_blank" rel="noopener noreferrer"
+                            aria-label="seafood">
+                            <div class="project__img">
+                                <picture>
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_3.webp 450w,
+                                ./images/mobile/portfolio/project-mb_3@2x.webp 900w,
+                                ./images/mobile/portfolio/project-mb_3@3x.webp 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/webp">
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_3.jpg 450w,
+                                ./images/mobile/portfolio/project-mb_3@2x.jpg 900w,
+                                ./images/mobile/portfolio/project-mb_3@3x.jpg 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/jpg">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_3.webp 354w,
+                                ./images/tablet/portfolio/project-tb_3@2x.webp 708w,
+                                ./images/tablet/portfolio/project-tb_3@3x.webp 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/webp">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_3.jpg 354w,
+                                ./images/tablet/portfolio/project-tb_3@2x.jpg 708w,
+                                ./images/tablet/portfolio/project-tb_3@3x.jpg 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/jpg">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_3.webp 370w,
+                                ./images/desktop/portfolio/project-ds_3@2x.webp 740w,
+                                ./images/desktop/portfolio/project-ds_3@3x.webp 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/webp">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_3.jpg 370w,
+                                ./images/desktop/portfolio/project-ds_3@2x.jpg 740w,
+                                ./images/desktop/portfolio/project-ds_3@3x.jpg 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/jpg">
+
+                                    <img src="./images/desktop/portfolio/project-ds_3.jpg"
+                                        alt="Приложение ресторан Seafood">
+                                </picture>
+
+                                <div class="project__overlay">
+                                    <p class="project__desc">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="project__card">
+                                <h2 class="project__title">Ресторан <span lang="en">Seafood</span></h2>
+                                <p class="project__text">Приложение</p>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="project__item">
+                        <a class="project__link" href="#" target="_blank" rel="noopener noreferrer" aria-label="prime">
+                            <div class="project__img">
+                                <picture>
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_4.webp 450w,
+                                ./images/mobile/portfolio/project-mb_4@2x.webp 900w,
+                                ./images/mobile/portfolio/project-mb_4@3x.webp 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/webp">
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_4.jpg 450w,
+                                ./images/mobile/portfolio/project-mb_4@2x.jpg 900w,
+                                ./images/mobile/portfolio/project-mb_4@3x.jpg 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/jpg">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_4.webp 354w,
+                                ./images/tablet/portfolio/project-tb_4@2x.webp 708w,
+                                ./images/tablet/portfolio/project-tb_4@3x.webp 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/webp">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_4.jpg 354w,
+                                ./images/tablet/portfolio/project-tb_4@2x.jpg 708w,
+                                ./images/tablet/portfolio/project-tb_4@3x.jpg 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/jpg">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_4.webp 370w,
+                                ./images/desktop/portfolio/project-ds_4@2x.webp 740w,
+                                ./images/desktop/portfolio/project-ds_4@3x.webp 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/webp">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_4.jpg 370w,
+                                ./images/desktop/portfolio/project-ds_4@2x.jpg 740w,
+                                ./images/desktop/portfolio/project-ds_4@3x.jpg 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/jpg">
+
+                                    <img src="./images/desktop/portfolio/project-ds_4.jpg" alt="Маркетинг проект Prime">
+                                </picture>
+
+                                <div class="project__overlay">
+                                    <p class="project__desc">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="project__card">
+                                <h2 class="project__title">Проект <span lang="en">Prime</span></h2>
+                                <p class="project__text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project__item">
+                        <a class="project__link" href="#" target="_blank" rel="noopener noreferrer" aria-label="boxes">
+                            <div class="project__img">
+                                <picture>
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_5.webp 450w,
+                                ./images/mobile/portfolio/project-mb_5@2x.webp 900w,
+                                ./images/mobile/portfolio/project-mb_5@3x.webp 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/webp">
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_5.jpg 450w,
+                                ./images/mobile/portfolio/project-mb_5@2x.jpg 900w,
+                                ./images/mobile/portfolio/project-mb_5@3x.jpg 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/jpg">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_5.webp 354w,
+                                ./images/tablet/portfolio/project-tb_5@2x.webp 708w,
+                                ./images/tablet/portfolio/project-tb_5@3x.webp 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/webp">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_5.jpg 354w,
+                                ./images/tablet/portfolio/project-tb_5@2x.jpg 708w,
+                                ./images/tablet/portfolio/project-tb_5@3x.jpg 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/jpg">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_5.webp 370w,
+                                ./images/desktop/portfolio/project-ds_5@2x.webp 740w,
+                                ./images/desktop/portfolio/project-ds_5@3x.webp 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/webp">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_5.jpg 370w,
+                                ./images/desktop/portfolio/project-ds_5@2x.jpg 740w,
+                                ./images/desktop/portfolio/project-ds_5@3x.jpg 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/jpg">
+
+                                    <img src="./images/desktop/portfolio/project-ds_5.jpg"
+                                        alt="Приложение проект Boxes">
+                                </picture>
+
+                                <div class="project__overlay">
+                                    <p class="project__desc">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="project__card">
+                                <h2 class="project__title">Проект <span lang="en">Boxes</span></h2>
+                                <p class="project__text">Приложение</p>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="project__item">
+                        <a class="project__link" href="#" target="_blank" rel="noopener noreferrer"
+                            aria-label="limitededition">
+                            <div class="project__img">
+                                <picture>
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_6.webp 450w,
+                                ./images/mobile/portfolio/project-mb_6@2x.webp 900w,
+                                ./images/mobile/portfolio/project-mb_6@3x.webp 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/webp">
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_6.jpg 450w,
+                                ./images/mobile/portfolio/project-mb_6@2x.jpg 900w,
+                                ./images/mobile/portfolio/project-mb_6@3x.jpg 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/jpg">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_6.webp 354w,
+                                ./images/tablet/portfolio/project-tb_6@2x.webp 708w,
+                                ./images/tablet/portfolio/project-tb_6@3x.webp 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/webp">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_6.jpg 354w,
+                                ./images/tablet/portfolio/project-tb_6@2x.jpg 708w,
+                                ./images/tablet/portfolio/project-tb_6@3x.jpg 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/jpg">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_6.webp 370w,
+                                ./images/desktop/portfolio/project-ds_6@2x.webp 740w,
+                                ./images/desktop/portfolio/project-ds_6@3x.webp 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/webp">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_6.jpg 370w,
+                                ./images/desktop/portfolio/project-ds_6@2x.jpg 740w,
+                                ./images/desktop/portfolio/project-ds_6@3x.jpg 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/jpg">
+
+                                    <img src="./images/desktop/portfolio/project-ds_6.jpg"
+                                        alt="Веб-сайт Inspiration has no Borders">
+                                </picture>
+
+                                <div class="project__overlay">
+                                    <p class="project__desc">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="project__card">
+                                <h2 class="project__title"><span lang="en">Inspiration has no Borders</span></h2>
+                                <p class="project__text">Веб-сайт</p>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="project__item">
+                        <a class="project__link" href="#" target="_blank" rel="noopener noreferrer"
+                            aria-label="inspirations">
+                            <div class="project__img">
+                                <picture>
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_7.webp 450w,
+                                ./images/mobile/portfolio/project-mb_7@2x.webp 900w,
+                                ./images/mobile/portfolio/project-mb_7@3x.webp 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/webp">
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_7.jpg 450w,
+                                ./images/mobile/portfolio/project-mb_7@2x.jpg 900w,
+                                ./images/mobile/portfolio/project-mb_7@3x.jpg 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/jpg">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_7.webp 354w,
+                                ./images/tablet/portfolio/project-tb_7@2x.webp 708w,
+                                ./images/tablet/portfolio/project-tb_7@3x.webp 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/webp">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_7.jpg 354w,
+                                ./images/tablet/portfolio/project-tb_7@2x.jpg 708w,
+                                ./images/tablet/portfolio/project-tb_7@3x.jpg 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/jpg">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_7.webp 370w,
+                                ./images/desktop/portfolio/project-ds_7@2x.webp 740w,
+                                ./images/desktop/portfolio/project-ds_7@3x.webp 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/webp">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_7.jpg 370w,
+                                ./images/desktop/portfolio/project-ds_7@2x.jpg 740w,
+                                ./images/desktop/portfolio/project-ds_7@3x.jpg 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/jpg">
+
+                                    <img src="./images/desktop/portfolio/project-ds_7.jpg"
+                                        alt="Дизайн издание Limited Edition">
+                                </picture>
+
+                                <div class="project__overlay">
+                                    <p class="project__desc">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="project__card">
+                                <h2 class="project__title">Издание <span lang="en">Limited Edition</span></h2>
+                                <p class="project__text">Дизайн</p>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="project__item">
+                        <a class="project__link" href="#" target="_blank" rel="noopener noreferrer" aria-label="lab">
+                            <div class="project__img">
+                                <picture>
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_8.webp 450w,
+                                ./images/mobile/portfolio/project-mb_8@2x.webp 900w,
+                                ./images/mobile/portfolio/project-mb_8@3x.webp 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/webp">
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_8.jpg 450w,
+                                ./images/mobile/portfolio/project-mb_8@2x.jpg 900w,
+                                ./images/mobile/portfolio/project-mb_8@3x.jpg 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/jpg">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_8.webp 354w,
+                                ./images/tablet/portfolio/project-tb_8@2x.webp 708w,
+                                ./images/tablet/portfolio/project-tb_8@3x.webp 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/webp">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_8.jpg 354w,
+                                ./images/tablet/portfolio/project-tb_8@2x.jpg 708w,
+                                ./images/tablet/portfolio/project-tb_8@3x.jpg 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/jpg">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_8.webp 370w,
+                                ./images/desktop/portfolio/project-ds_8@2x.webp 740w,
+                                ./images/desktop/portfolio/project-ds_8@3x.webp 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/webp">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_8.jpg 370w,
+                                ./images/desktop/portfolio/project-ds_8@2x.jpg 740w,
+                                ./images/desktop/portfolio/project-ds_8@3x.jpg 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/jpg">
+
+                                    <img src="./images/desktop/portfolio/project-ds_8.jpg" alt="Маркетинг проект LAB">
+                                </picture>
+
+                                <div class="project__overlay">
+                                    <p class="project__desc">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="project__card">
+                                <h2 class="project__title">Проект <span lang="en">LAB</span></h2>
+                                <p class="project__text">Маркетинг</p>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="project__item">
+                        <a class="project__link" href="#" target="_blank" rel="noopener noreferrer"
+                            aria-label="growingbusiness">
+                            <div class="project__img">
+                                <picture>
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_9.webp 450w,
+                                ./images/mobile/portfolio/project-mb_9@2x.webp 900w,
+                                ./images/mobile/portfolio/project-mb_9@3x.webp 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/webp">
+                                    <source srcset="
+                                ./images/mobile/portfolio/project-mb_9.jpg 450w,
+                                ./images/mobile/portfolio/project-mb_9@2x.jpg 900w,
+                                ./images/mobile/portfolio/project-mb_9@3x.jpg 1350w" media="(max-width: 767px)"
+                                        sizes="(max-width: 767px) 450px" type="image/jpg">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_9.webp 354w,
+                                ./images/tablet/portfolio/project-tb_9@2x.webp 708w,
+                                ./images/tablet/portfolio/project-tb_9@3x.webp 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/webp">
+                                    <source srcset="
+                                ./images/tablet/portfolio/project-tb_9.jpg 354w,
+                                ./images/tablet/portfolio/project-tb_9@2x.jpg 708w,
+                                ./images/tablet/portfolio/project-tb_9@3x.jpg 1062w" media="(max-width: 1199px)"
+                                        sizes="(max-width: 1199px) 354px" type="image/jpg">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_9.webp 370w,
+                                ./images/desktop/portfolio/project-ds_9@2x.webp 740w,
+                                ./images/desktop/portfolio/project-ds_9@3x.webp 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/webp">
+                                    <source srcset="
+                                ./images/desktop/portfolio/project-ds_9.jpg 370w,
+                                ./images/desktop/portfolio/project-ds_9@2x.jpg 740w,
+                                ./images/desktop/portfolio/project-ds_9@3x.jpg 1110w" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 370px" type="image/jpg">
+
+                                    <img src="./images/desktop/portfolio/project-ds_9.jpg"
+                                        alt="Приложение Growing Business">
+                                </picture>
+
+                                <div class="project__overlay">
+                                    <p class="project__desc">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="project__card">
+                                <h2 class="project__title"><span lang="en">Growing Business</span></h2>
+                                <p class="project__text">Приложение</p>
+                            </div>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer container">
+            <div class="footer-address">
+                <a class="logo footer-address__logo" href="./index.html" aria-label="studio">Web<span
+                        class="footer-address__span">Studio</span></a>
+                <address class="footer-address__nav">
+                    <ul>
+                        <li class="footer-address__list">
+                            <a class="footer-address__link-gps" href="https://goo.gl/maps/1aV7GLh5moSTKQaL6"
+                                target="_blank" rel="noopener noreferrer" aria-label="geolocation">г. Киев,
+                                пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="footer-address__list">
+                            <a class="footer-address__link" href="mailto:info@devstudio.com"
+                                aria-label="mail">info@devstudio.com</a>
+                        </li>
+                        <li class="footer-address__list">
+                            <a class="footer-address__link" href="tel:+380961111111" aria-label="tel">+38 096 111 11
+                                11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-social">
+                <strong class="invocation">присоединяйтесь</strong>
+                <ul class="icon-set">
+                    <li class="icon-set__item">
+                        <a href="https://www.instagram.com/" class="icon-set__link icon" aria-label="instagram"
+                            target="_blank" rel="noopener noreferrer">
+                            <svg class="icon-set__icon" width="20" height="20">
+                                <use href="./images/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-set__item">
+                        <a href="https://twitter.com/?lang=uk" class="icon-set__link icon" aria-label="twitter"
+                            target="_blank" rel="noopener noreferrer">
+                            <svg class="icon-set__icon" width="20" height="20">
+                                <use href="./images/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-set__item">
+                        <a href="https://uk-ua.facebook.com/" class="icon-set__link icon" aria-label="facebook"
+                            target="_blank" rel="noopener noreferrer">
+                            <svg class="icon-set__icon" width="20" height="20">
+                                <use href="./images/icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-set__item">
+                        <a href="https://www.linkedin.com/" class="icon-set__link icon" aria-label="linkedin"
+                            target="_blank" rel="noopener noreferrer">
+                            <svg class="icon-set__icon" width="20" height="20">
+                                <use href="./images/icons.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-email">
+                <form name="form-follow">
+                    <div class="form-follow__field">
+                        <label class="form-follow__label">
+                            <strong class="invocation">Подпишитесь на рассылку</strong>
+                            <input class="form-follow__input" type="email" name="user-email" placeholder="E-mail"
+                                aria-label="email-input-field" required>
+                        </label>
+                        <button class="follow-btn" type="submit" aria-label="subscribe-button">
+                            <span class="follow-btn__text">Подписаться</span>
+                            <svg class="follow-btn__icon icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
-    
-        <form class="footer-label">
-          <label class="footer-label__title">Подпишитесь на рассылку </label>
-          <input class="footer-label__email" type="email" name="email" placeholder="Е-mail" required>
-    
-       <button class="button-submit" type="submit">Подписаться <svg class="f-submit" width="24" height="24">
-            <use href="./image/icons.svg#icon-send"></use>
-            </svg>
-        </button>
-    </form>
-    </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

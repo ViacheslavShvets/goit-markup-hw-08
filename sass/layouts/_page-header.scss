@@ -1,0 +1,227 @@
+/* ! HEADER ! */
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header.container {
+    display: flex;
+    align-items: center;
+    border: none;
+
+    @media screen and (max-width: 767px) {
+        position: relative;
+    }
+}
+
+/* LOGO */
+
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+
+    @media screen and (max-width: 1199px) {
+        font-size: 24px;
+        line-height: 1.16;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}
+
+.header__logo {
+
+    @media screen and (max-width: 767px) {
+        padding: 16px 0;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: $tablet) {
+        padding: 24px 0;
+        margin-right: 88px;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        padding: 24px 0;
+        margin-right: 93px;
+    }
+}
+
+.logo .span-h {
+    color: var(--main-text-color);
+}
+
+/* NAV */
+
+.site-nav {
+
+    @media screen and (min-width: $tablet) {
+        margin-right: auto;
+    }
+}
+
+.site-nav__list {
+    display: flex;
+    padding: 0;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+
+.site-nav__item:not(:last-child) {
+    @media screen and (min-width: $tablet) {
+        margin-right: 50px;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 32px;
+    }
+}
+
+.site-nav__link {
+    display: block;
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    
+    color: var(--main-text-color);
+
+    transition: color var(--anim-standart);
+
+    @media screen and (max-width: 767px) {
+        font-size: 40px;
+        line-height: 1.17;
+    }
+    
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.14;
+        padding: 32px 0 31px;
+    }
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+    color: var(--accent-color)
+}
+
+/* CURRENT <a> IN HEADER */
+.site-nav__link.site-nav__link--current {
+    position: relative;
+    color: var(--accent-color);
+}
+
+@media screen and (min-width: $tablet) {
+    .site-nav__link.site-nav__link--current::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        width: 100%;
+        height: 4px;
+        display: inline-block;
+
+        background-color: var(--accent-color);
+        border-radius: 4px;
+    }
+}
+
+/* CONTACTS */
+
+.contacts {
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+
+        margin-bottom: 48px;
+    }
+}
+
+.contacts__item {
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        display: flex;
+    }
+}
+
+.contacts__item:not(:last-child) {
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 30px;
+    }
+}
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    color: var(--main-2-text-color);
+
+    transition: color var(--anim-standart);
+
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 1.16;
+        padding: 16px 0;
+
+        &.contacts__link--current {
+            font-size: 34px;
+            line-height: 1.17;
+            color: var(--accent-color);
+        }
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        padding: 5px 0;
+        font-size: 12px;
+        line-height: 1.16;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 32px 0 31px;
+        font-size: 14px;
+        line-height: 1.14;
+    }
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+    color: var(--accent-color)
+}
+
+.contacts__link:hover .contacts__icon,
+.contacts__link:focus .contacts__icon {
+    fill: var(--accent-color);
+}
+
+.contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}

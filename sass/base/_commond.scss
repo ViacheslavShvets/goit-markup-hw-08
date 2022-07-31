@@ -1,0 +1,25 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    background-color: var(--white-color);
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.icon {
+    color: var(--icon-cl);
+}

@@ -1,36 +1,24 @@
-.container   {
+.header.container,
+.container,
+.footer.container {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    @media screen and (min-width: 480px) { 
-        max-width: 480px;
+
+
+    // breakpoint: 480px / 768px / 1200px
+
+    @media screen and (min-width: $mobile) {
+        max-width: $mobile;
     }
 
-    @media screen and (min-width: 768px) {
-    
-    } max-width: 768px;
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-
+    @media screen and (min-width: $tablet) {
+        max-width: $tablet;
     }
 
-}
-
-
-/* падінги секцій */
-.section {
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
-
-.container-header {display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px; width: 1200px; box-sizing:border-box;
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
+    }
 }

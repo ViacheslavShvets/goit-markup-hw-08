@@ -1,39 +1,28 @@
-@import "./utils/vars";
+// utils styles
+@import './utils/index';
 
-@import "./base/common";
+// base styles
+@import './base/index';
 
-@import "./base/reset";
+// components styles
+@import './components/index';
 
-@import "./components/sections";
+// layouts styles
 
-@import "./components/container";
+@import './layouts/page-header';
 
-@import "./components/modal";
+@import './layouts/page-hero';
 
-@import "./layouts/social";
+@import './layouts/page-benefits';
 
-@import "./layouts/header";
+@import './layouts/page-portfolio';
 
-@import "./layouts/footer";
+@import './layouts/page-team';
 
-@import "./layouts/modal";
+@import './layouts/page-customers';
 
-@import "./layouts/checkbox";
+@import './layouts/page-filter';
 
-@import "./layouts/button";
+@import './layouts/page-projects';
 
-@import "./layouts/clients";
-
-@import "./layouts/cards";
-
-@import "./layouts/works";
-
-@import "./layouts/logo";
-
-@import "./layouts/hero";
-
-@import "./layouts/studia";
-
-@import "./layouts/comand";
-
-@import "./layouts/label";
+@import './layouts/page-footer';

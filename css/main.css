@@ -1111,6 +1111,7 @@ textarea:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--white-color);
